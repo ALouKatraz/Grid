@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: solid salmon 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px 20px;
+}
+
+.item{
+    border: dotted red 1px ;
+    background-color: antiquewhite;
+}
+
+.item1{
+    grid-area: 1/1/2/-1;
+}
+
+.item2{
+    grid-area: 2/1/4/3;
+}
+
+.item3{
+    grid-area: 2/3/5/4;
+}

@@ -1,0 +1,43 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /* Définition de la grille */
+.container1 {
+    height: 300px;
+    width: 300px;
+    border: solid salmon 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 20px;
+}
+
+.item{
+    border: dotted red 1px;
+
+}
+  
+.item4 {
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.item5{
+    background-color: blueviolet;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+  
+
